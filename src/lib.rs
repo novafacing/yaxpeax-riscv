@@ -80,7 +80,7 @@ impl Instruction {
         &self.opcode
     }
 
-    pub fn operands(&self) -> &[Operand] {
+    pub fn operands(&self) -> &[Operand; 3] {
         &self.operands
     }
 
