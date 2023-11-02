@@ -75,6 +75,10 @@ impl Instruction {
             )),
         }
     }
+
+    fn opcode(&self) -> &Opcode {
+        &self.opcode
+    }
 }
 
 impl yaxpeax_arch::Instruction for Instruction {
