@@ -76,8 +76,16 @@ impl Instruction {
         }
     }
 
-    fn opcode(&self) -> &Opcode {
+    pub fn opcode(&self) -> &Opcode {
         &self.opcode
+    }
+
+    pub fn operands(&self) -> &[Operand] {
+        &self.operands
+    }
+
+    pub fn word(&self) -> &u32 {
+        &self.word
     }
 }
 
