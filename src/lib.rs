@@ -172,7 +172,7 @@ pub enum Opcode {
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum FieldSpec {
+enum FieldSpec {
     Rs1,
     Rs2,
     Rd,
@@ -191,7 +191,7 @@ pub enum FieldSpec {
 }
 
 #[derive(Debug, PartialEq, Clone, Copy)]
-pub enum OperandSpec {
+enum OperandSpec {
     Nothing = 0,
     Rs1,
     Rs2,
