@@ -3,18 +3,18 @@
 name = "yaxpeax-riscv"
 edition = "2021"
 version = "0.1.0"
-authors = [ "Justin Moore <me@justinm.one>" ]
+authors = ["Justin Moore <me@justinm.one>"]
 license = "0BSD"
 repository = "https://github.com/DrChat/yaxpeax-riscv/"
 description = "risc-v decoders for the yaxpeax project"
 
 [dependencies]
-yaxpeax-arch = { version = "0.2.2", default-features = false, features = [] }
+yaxpeax-arch = { version = "0.3.2", default-features = false, features = [] }
 serde = { version = "1.0", features = ["derive"], optional = true }
-num_enum = { version = "0.2", default-features = false }
+num_enum = { version = "0.7.2", default-features = false }
 
 [dev-dependencies]
-criterion = "0.3"
+criterion = "0.5.1"
 
 [[test]]
 name = "test"
